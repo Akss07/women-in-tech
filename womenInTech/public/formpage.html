@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <title>Women In Tech</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo">Women In Technology</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="blogspage.html" class="nav-link">Blogs</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+                <li><a href="formpage.html" class="nav-link nav-links-btn">Join our Community</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="form-main-container">
+        <div class="form-container">
+            <h2>Join our Women in Tech community</h2>
+            <form action="/form" method="post" class="main-form">
+                <label class="form__label"><span>First Name:</span><input name="fname" class= "input-label" type="text" required></label>
+                <label class="form__label"><span>Last Name:</span><input name="lname" class= "input-label" type="text"></label>
+                <label class="form__label"><span>E-mail:</span><input name="email" class= "input-label" type="email" required></label>
+                <label class="form__label"><span>Linkedin account:</span><input name="linkedinacc" class= "input-label" type="text" required></label>
+                <label class="form__label"><span>Join the Whatsapp Group:</span><input name="PhoneNumber" class= "input-label" type="tel" placeholder="Enter PhoneNumber" pattern="[0-9]{10}"></label>
+                <label for="experiences" class="form__label"><span>Experience level:</span>
+                    <select name ="experience" class= "input-label" id ="experiences" required>
+                        <option value= "">Please Select</option>
+                        <option value="1">Student/Intern</option>
+                        <option value="2">Entry level</option>
+                        <option value="3">Mid-Senior level</option>
+                        <option value="4">Director</option>
+                        <option value="5">Executive/Board</option>
+                        <option value="6">Retired</option>
+                        <option value="7">Other</option>
+                    </select>
+                </label>
+                <label class="form__label"><span>Do you want to subscribe to Women in Tech's Newsletters:</span><input name="subscribed"   type="checkbox" name="subscribe"></label>
+                <button type="submit" class="form__label form-label-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <h4> Image References </h4>
+        <small><a href="//undraw.co/">Home Page Illustration &copy;Undraw.com </a></small>
+        <small><a href="//twitter.com/karyafar">Kamelia Aryafar &copy; Twitter.com</a></small>
+        <small><a href="//twitter.com/susanwojcicki">Susane Dian Wojcickin &copy; Twitter.com</a></small>
+        <small><a href="//linkedin.com/in/sherrybryan//">Sherry Bryan &copy; Linkedin.com</a></small>
+        <small><a href="https://app.boardroominsiders.com/skinny-profiles/autodesk-inc-raji-arasu">Raji Arasu &copy; boardroominsiders.com</a></small>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
